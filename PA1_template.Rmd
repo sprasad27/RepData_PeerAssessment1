@@ -4,6 +4,7 @@
 title: "Reproducible Research : course_project_1"
 output: html_document
 ---
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -35,7 +36,7 @@ Solution:
     Step 2. Plot the histogram using the hist function
     Step 3. Determine mean and medium from the data frame from step 1.
 
-```{r totalsteps,mean,median and histogram }
+```{r totalstepshistogram }
     steps_per_day <- aggregate(steps ~ date , clean_activity_csv, sum)
     hist(steps_per_day$steps , 
      main = "Histogram of the total number of steps taken each day", xlab="Steps/Day")
@@ -143,5 +144,6 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
 ```
 
 There is some difference in the activity patterns between weekday and weekends. The maximum recorded mean steps occurs on a weekday. The activity levels on a weekday have the max recorded value but then the activity levels tend to go down . The weekend activity levels stay consistent pretty much throughout the day.
+```
 ```
 

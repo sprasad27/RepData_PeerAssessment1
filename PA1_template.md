@@ -8,11 +8,12 @@ output: html_document
 ```
 
 ```
-## Error: <text>:6:0: unexpected end of input
+## Error: <text>:5:0: unexpected end of input
+## 3: output: html_document
 ## 4: ---
-## 5: 
 ##   ^
 ```
+
 
 
 ## Loading and preprocessing the data
@@ -61,7 +62,7 @@ Solution:
      main = "Histogram of the total number of steps taken each day", xlab="Steps/Day")
 ```
 
-![plot of chunk totalsteps,mean,median and histogram](figure/totalsteps,mean,median and histogram-1.png)
+![plot of chunk totalstepshistogram](figure/totalstepshistogram-1.png)
 
 ```r
     mean_steps <- mean(steps_per_day$steps)
@@ -197,5 +198,6 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
 ![plot of chunk timeseriesplot](figure/timeseriesplot-1.png)
 
 There is some difference in the activity patterns between weekday and weekends. The maximum recorded mean steps occurs on a weekday. The activity levels on a weekday have the max recorded value but then the activity levels tend to go down . The weekend activity levels stay consistent pretty much throughout the day.
+```
 ```
 
