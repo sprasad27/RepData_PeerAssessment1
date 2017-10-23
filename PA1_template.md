@@ -86,7 +86,7 @@ Solution:
 )
 ```
 
-![plot of chunk timeseries plot](figure/timeseries plot-1.png)
+![plot of chunk timeseriesplot](figure/timeseriesplot-1.png)
 
 * Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -195,9 +195,11 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
     facet_wrap( ~ day, nrow = 2, ncol = 1)   + labs(x = "Interval", y = "Number of steps")  + theme_bw()
 ```
 
-![plot of chunk timeseriesplot](figure/timeseriesplot-1.png)
+![plot of chunk timeseriesplot2](figure/timeseriesplot2-1.png)
 
 There is some difference in the activity patterns between weekday and weekends. The maximum recorded mean steps occurs on a weekday. The activity levels on a weekday have the max recorded value but then the activity levels tend to go down . The weekend activity levels stay consistent pretty much throughout the day.
+```
+```
 ```
 ```
 
