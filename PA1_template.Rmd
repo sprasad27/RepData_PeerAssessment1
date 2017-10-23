@@ -1,3 +1,5 @@
+
+```{r }
 ---
 title: "Reproducible Research : course_project_1"
 output: html_document
@@ -141,3 +143,5 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
 ```
 
 There is some difference in the activity patterns between weekday and weekends. The maximum recorded mean steps occurs on a weekday. The activity levels on a weekday have the max recorded value but then the activity levels tend to go down . The weekend activity levels stay consistent pretty much throughout the day.
+```
+

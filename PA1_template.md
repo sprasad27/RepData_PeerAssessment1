@@ -189,13 +189,6 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
 
 ```r
     library(ggplot2)
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.3.2
-```
-
-```r
     imputed_steps_per_week <- aggregate(steps ~ interval+day, imputed_activity_csv, mean)
     ggplot(imputed_steps_per_week, aes(x = interval, y = steps)) + geom_line() + 
     facet_wrap( ~ day, nrow = 2, ncol = 1)   + labs(x = "Interval", y = "Number of steps")  + theme_bw()
