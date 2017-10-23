@@ -187,16 +187,16 @@ imputed_activity_csv$day <- as.factor(day_of_the_week) # add in a new factor var
 
 2. Make a panel plot containing a time series plot (i.e. 𝚝𝚢𝚙𝚎 = "𝚕") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
 
-``` {r timeseriespldaystimeseriesploty(ggplot2)
+
+```r
+    library(ggplot2)
     imputed_steps_per_week <- aggregate(steps ~ interval+day, imputed_activity_csv, mean)
     ggplot(imputed_steps_per_week, aes(x = interval, y = steps)) + geom_line() + 
     facet_wrap( ~ day, nrow = 2, ncol = 1)   + labs(x = "Interval", y = "Number of steps")  + theme_bw()
 ```
 
+![plot of chunk daystimeseriesplot](figure/daystimeseriesplot-1.png)
+
 There is some difference in the activity patterns between weekday and weekends. The maximum recorded mean steps occurs on a weekday. The activity levels on a weekday have the max recorded value but then the activity levels tend to go down . The weekend activity levels stay consistent pretty much throughout the day.
-```
-```
-```
-```
 ```
 
